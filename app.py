@@ -5,7 +5,12 @@ st.title("Resume Skill Checker")
 
 uploaded_file = st.file_uploader("Upload your resume", type="pdf")
 
-skills = ["python", "machine learning", "sql", "java", "html", "css", "javascript", "data analysis", "git"]
+skills = [
+"python","machine learning","sql","java","html","css","javascript",
+"data analysis","git","docker","linux","c++","c","tensorflow",
+"pandas","numpy","react","node","flask","django","streamlit",
+"deep learning","nlp","data science"
+]
 
 if uploaded_file:
     pdf_reader = PyPDF2.PdfReader(uploaded_file)
